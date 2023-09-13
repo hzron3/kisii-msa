@@ -1,0 +1,158 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.students{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tittle{
+    text-align: center;
+    padding: 10px 10px;
+}
+.tittle h2 {
+    padding: 10px 10px;
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    width: 70%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin:auto;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    /* width: 20%; */
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.save-btn{
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.save-btn button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.save-btn button:hover {
+    background-color: #0056b3;
+}
+.save-btn button a{
+    text-decoration: none;
+    color: beige;
+    padding: 5px 5px;
+}
+@media(max-width:645px){
+    .students{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding:5px 20px;
+        /* border: 1px black solid; */
+
+    }
+    label {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        padding: 10px 10px;
+        margin: auto;
+        font-weight: bold;
+        /* border: 1px black solid; */
+    }
+    
+    input[type="text"] {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        padding: 10px 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin: auto;
+    }  
+}
+@media(max-width:635px){
+    .students{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding:5px 20px;
+        /* border: 1px black solid; */
+
+    }
+    label {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        padding: 10px 10px;
+        margin: auto;
+        font-weight: bold;
+        /* border: 1px black solid; */
+    }
+    
+    input[type="text"] {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        padding: 10px 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin: auto;
+    }  
+}
+@media(max-width:225px){
+    .students{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding:5px 20px;
+        /* border: 1px black solid; */
+
+    }
+    label {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        width: 50px;
+        padding: 10px 10px;
+        margin: auto;
+        font-weight: bold;
+        /* border: 1px black solid; */
+    }
+    
+    input[type="text"] {
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+        padding: 10px 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin: auto;
+    }  
+}
+
